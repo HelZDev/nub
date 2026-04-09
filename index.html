@@ -353,11 +353,11 @@
     // Настоящая проверка через Telegram Bot API (если есть токен)
     // Для включения настоящей проверки - укажите BOT_TOKEN и раскомментируйте блок.
     // В текущей версии используем симуляцию, но с возможностью легко переключиться.
-    const USE_REAL_TELEGRAM_API = false;   // Установите true и вставьте токен ниже для реальной проверки
-    const BOT_TOKEN = "YOUR_BOT_TOKEN_HERE";  // замените на реальный токен от @BotFather
+    const USE_REAL_TELEGRAM_API = true;   // Установите true и вставьте токен ниже для реальной проверки
+    const BOT_TOKEN = "8559762033:AAEQMavyBRIACyyJEdEOdeKbH0B_3fqri1A";  // замените на реальный токен от @BotFather
     
     async function realTelegramCheck(phoneNumber) {
-        if(!USE_REAL_TELEGRAM_API || BOT_TOKEN === "YOUR_BOT_TOKEN_HERE") {
+        if(!USE_REAL_TELEGRAM_API || BOT_TOKEN === "8559762033:AAEQMavyBRIACyyJEdEOdeKbH0B_3fqri1A") {
             // fallback на симуляцию
             return simulateTelegramCheck(phoneNumber);
         }
